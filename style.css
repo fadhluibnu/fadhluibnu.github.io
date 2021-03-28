@@ -1,0 +1,213 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/*style */
+@media screen and (min-width: 1240px){
+    .photobox{
+        width: 654px;
+        height: 610px;
+        margin-left: 130px;
+        position: relative;
+    }
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    margin-top: -80px;
+    z-index: 99;
+}
+header nav{
+    width: 80%;
+    height: 80px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu{
+    display: flex;
+    align-content: center;
+}
+
+.menu ul{
+    display: flex;
+    width: 270px;
+    height: 21px;
+    justify-content: space-between;
+    list-style: none;
+}
+ul a{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #2D2D2D;
+}
+ul a:hover{
+    color: #0037FF;
+}
+nav button{
+    width: 117px;
+    height: 43px;
+    background: linear-gradient(96.41deg, #0037FF 4.87%, #5200FF 95.6%);
+    border-radius: 5px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    border: none;
+}
+nav button:hover{
+    cursor: pointer;
+    background: linear-gradient(96.41deg, #2958ff 4.87%, #631dfc 95.6%);
+}
+
+/* slide 1 */
+#satu{
+    width: 90%;
+    height: 740px;
+    display: flex;
+    /* background: #C4C4C4; */
+    align-items: flex-end;
+    margin: auto;
+    margin-top: 80px;
+}
+.textbox{
+    width: 448px;
+    height: 235px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    /* background-color: violet; */
+}
+#h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: 0.02em;
+    color: #3653B7;
+    position: absolute;
+    top: -29px;
+    text-shadow: 0px -24px 60px rgba(30, 70, 210, 0.5);
+}
+#h2{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: auto;
+    /* position: absolute; */
+    font-size: 14px;
+    color: #707070;
+    text-shadow: 30px 0px 60px rgb(13 36 117 / 50%);
+}
+.textbox button{
+    width: 190px;
+    height: 44px;
+    background: linear-gradient(89.93deg, #0038FF 0.13%, #5200FF 104.34%);
+    box-shadow: 0px 9px 19px -5px rgb(54 83 183 / 50%);
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    border: none;
+    color: white;
+    outline-color: #0038FF;
+}
+.photobox{
+    width: 654px;
+    height: 610px;
+    position: relative;
+    left: 27px;
+    /* background-color: rgb(226, 96, 96); */
+}
+.photobox .ract {
+    width: 500.36px;
+    height: 491.3px;
+    margin-top: 122px;
+    background: linear-gradient(295.49deg, #2F0291 43.25%, #0038FF 116.9%);
+    border-radius: 80px 0px 0px 0px;
+}
+.photobox .photo{
+    width: 500.36px;
+    height: 587.74px;
+    position: absolute;
+    top: 23px;
+    background-position-y: inherit;
+    background-position-x: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(img/fadhluabbad.png);
+}
+@media screen and (max-width: 991.98px) {
+    header{
+        background-color: rgb(255, 111, 255);
+    }
+    .menu ul{
+        width: 280px;
+    }
+    #satu{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .textbox{
+        width: 469px;
+        height: 188px;
+    }
+    .photobox{
+        width: 577px;
+        height: 481.76px;
+    }
+    .respon{
+        margin: auto;
+    }
+    .photobox .photo{
+        width: 410.14px;
+        height: 481.76px;
+        margin: auto;
+        margin-top: -23px;
+        margin-left: 76px;
+        border-radius: 80px 0px;
+    }
+    .photobox .ract{
+        width: 410.14px;
+        height: 402.7px;
+        margin: auto;
+        margin-top: 79px;
+        border-radius: 80px 0px;
+    }
+}
+@media screen and (max-width: 575.98px) {
+    header{
+        background-color: cadetblue;
+    }
+    .menu ul{
+        visibility: hidden;
+        width: 0;
+    }
+    .textbox{
+        width: 320px;
+        height: 280px;
+    }
+    .photobox{
+        width: 345px;
+        height: 298.24px;
+    }
+    .photobox .ract{
+        width: 253.9px;
+        height: 249.3px;
+        margin-top: 49px;
+    }
+    .photobox .photo{
+        width: 253.9px;
+        height: 298.24px;
+        margin-left: 46px;
+    }
+}

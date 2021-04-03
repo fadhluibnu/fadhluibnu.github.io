@@ -1,7 +1,9 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
@@ -16,6 +18,7 @@ body{
         position: relative;
     }
 }
+
 
 header{
     position: fixed;
@@ -146,6 +149,63 @@ nav button:hover{
     background-repeat: no-repeat;
     background-image: url(img/fadhluabbad.png);
 }
+
+/* slide 2 */
+#dua{
+    width: 100%;
+    height: 840px;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#dua p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #4A4A4A;
+    text-shadow: -30px 0px 60px rgba(13, 36, 117, 0.5);
+}
+#dua .project{
+    width: 87%;
+    height: 582px;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-between;
+}
+#project1{
+    background-image: url(img/Group\ 28.png);
+    background-size: cover;
+}
+#project2{
+    background-image: url(img/Group\ 5.png);
+    background-size: 103%;
+}
+#project1, #project2{
+    width: 528px;
+    height: 582px;
+    /* background: linear-gradient(153.27deg, #0038FF 0%, #5200FF 100%); */
+}
+@media screen and (max-width: 1235px){
+    #dua{
+        height: 1400px;
+        /* background-color: darkblue; */
+    }
+    #dua .project{
+        width: 87%;
+        height: 1200px;
+        padding: 10px;
+        box-sizing: border-box;
+        /* background-color: brown; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
 @media screen and (max-width: 991.98px) {
     header{
         background-color: rgb(255, 111, 255);
@@ -172,7 +232,7 @@ nav button:hover{
         width: 410.14px;
         height: 481.76px;
         margin: auto;
-        margin-top: -23px;
+        margin-top: -25px;
         margin-left: 76px;
         border-radius: 80px 0px;
     }

@@ -321,6 +321,7 @@ nav button:hover{
     #project1, #project2{
         width: 306px;
         height: 338px;
+        margin: auto;
     /* background: linear-gradient(153.27deg, #0038FF 0%, #5200FF 100%); */
     }
 }

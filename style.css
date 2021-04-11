@@ -316,6 +316,7 @@ nav button:hover{
     #dua .project{
         width: 306px;
         height: 719px;
+        padding: 0;
         /* background-color: aquamarine; */
     }
     #project1, #project2{

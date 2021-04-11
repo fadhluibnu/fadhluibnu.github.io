@@ -23,6 +23,7 @@ body{
 header{
     position: fixed;
     width: 100%;
+    box-shadow: 0px 4px 4px rgba(26, 70, 228, 0.5);
     background-color: white;
     margin-top: -80px;
     z-index: 99;
@@ -48,6 +49,7 @@ header nav{
     list-style: none;
 }
 ul a{
+    text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -186,6 +188,7 @@ nav button:hover{
 #project1, #project2{
     width: 528px;
     height: 582px;
+    border-radius: 5px;
     /* background: linear-gradient(153.27deg, #0038FF 0%, #5200FF 100%); */
 }
 @media screen and (max-width: 1235px){
@@ -208,7 +211,7 @@ nav button:hover{
 
 @media screen and (max-width: 991.98px) {
     header{
-        background-color: rgb(255, 111, 255);
+        box-shadow: 0px 4px 4px rgba(15, 52, 185, 0.5);
     }
     .menu ul{
         width: 280px;
@@ -246,11 +249,21 @@ nav button:hover{
 }
 @media screen and (max-width: 575.98px) {
     header{
-        background-color: cadetblue;
+        /* background-color: cadetblue; */
+        box-shadow: 0px 4px 4px rgba(15, 52, 185, 0.5);
     }
     .menu ul{
         visibility: hidden;
         width: 0;
+    }
+    menu{
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        bottom: -16px;
+        border-radius: 20px 20px 0 0;
+        background-color: blue;
+        z-index: 999;
     }
     .textbox{
         width: 320px;
@@ -269,5 +282,21 @@ nav button:hover{
         width: 253.9px;
         height: 298.24px;
         margin-left: 46px;
+    }
+    #dua{
+        width: 353px;
+        height: 920px;
+        /* background-color: rgb(6, 102, 49); */
+        margin: auto;
+    }
+    #dua .project{
+        width: 306px;
+        height: 719px;
+        /* background-color: aquamarine; */
+    }
+    #project1, #project2{
+        width: 306px;
+        height: 338px;
+    /* background: linear-gradient(153.27deg, #0038FF 0%, #5200FF 100%); */
     }
 }

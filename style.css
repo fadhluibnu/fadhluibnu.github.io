@@ -19,13 +19,16 @@ body{
     }
 }
 
-
+.bottom{
+    visibility: hidden;
+    position: absolute;
+}
 header{
     position: fixed;
     width: 100%;
     box-shadow: 0px 4px 4px rgba(26, 70, 228, 0.5);
     background-color: white;
-    margin-top: -80px;
+    /* margin-top: -80px; */
     z-index: 99;
 }
 header nav{
@@ -82,8 +85,8 @@ nav button:hover{
     /* background: #C4C4C4; */
     align-items: flex-end;
     margin: auto;
-    padding-top: 90px;
-    margin-top: 80px;
+    padding-top: 60px;
+    /* margin-top: 80px; */
 }
 .textbox{
     width: 448px;
@@ -210,7 +213,6 @@ nav button:hover{
         justify-content: space-between;
     }
 }
-
 @media screen and (max-width: 991.98px) {
     header{
         box-shadow: 0px 4px 4px rgba(15, 52, 185, 0.5);
@@ -270,6 +272,7 @@ nav button:hover{
         bottom: 0;
         /* background-color: blueviolet; */
         z-index: 999;
+        visibility: visible;
     }
     .bottom ul{
         width: 270px;
@@ -300,6 +303,9 @@ nav button:hover{
         width: 253.9px;
         height: 298.24px;
         margin-left: 46px;
+    }
+    #satu{
+        padding-top: 90px;
     }
     #dua{
         width: 353px;

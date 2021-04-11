@@ -73,7 +73,7 @@ nav button:hover{
     cursor: pointer;
     background: linear-gradient(96.41deg, #2958ff 4.87%, #631dfc 95.6%);
 }
-
+/* slide 1 2 */
 /* slide 1 */
 #satu{
     width: 90%;
@@ -82,6 +82,7 @@ nav button:hover{
     /* background: #C4C4C4; */
     align-items: flex-end;
     margin: auto;
+    padding-top: 90px;
     margin-top: 80px;
 }
 .textbox{
@@ -156,6 +157,7 @@ nav button:hover{
 #dua{
     width: 100%;
     height: 840px;
+    padding-top: 60px;
     /* background-color: blue; */
     display: flex;
     flex-direction: column;
@@ -256,14 +258,30 @@ nav button:hover{
         visibility: hidden;
         width: 0;
     }
-    menu{
+    .bottom{
         width: 100%;
         height: 50px;
         position: fixed;
-        bottom: -16px;
-        border-radius: 20px 20px 0 0;
-        background-color: blue;
+        display: flex;
+        margin: auto;
+        border-radius: 10px 10px 0 0;
+        background-color: white;
+        border: 1px solid rgba(15, 52, 185, 0.5);
+        bottom: 0;
+        /* background-color: blueviolet; */
         z-index: 999;
+    }
+    .bottom ul{
+        width: 270px;
+        height: 21px;
+        padding: 0;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        margin: auto;
+        /* background-color: brown; */
+        z-index: 99999;
+
     }
     .textbox{
         width: 320px;

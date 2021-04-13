@@ -26,7 +26,7 @@ body{
 header{
     position: fixed;
     width: 100%;
-    box-shadow: 0px 4px 4px rgba(26, 70, 228, 0.5);
+    box-shadow: 0px 4px 4px rgba(26, 70, 228, 0.2);
     background-color: white;
     /* margin-top: -80px; */
     z-index: 99;
@@ -195,6 +195,48 @@ nav button:hover{
     height: 582px;
     border-radius: 5px;
     /* background: linear-gradient(153.27deg, #0038FF 0%, #5200FF 100%); */
+}
+
+/* slide 3 */
+#skills{
+    width: 100%;
+    height: 840px;
+    display: flex;
+    /* background-color: blue; */
+}
+#skills .contain{
+    width: 100%;
+    height: 673px;
+    margin: auto;
+    display: flex;
+    background: linear-gradient(180deg, #3646FF 0%, #3646FF 100%);
+}
+#skills .contain2{
+    width: 1132px;
+    height: 613.81px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: brown;
+}
+#skills .contain .ract{
+    width: 522.56px;
+    height: 513.09px;
+    background: linear-gradient(295.49deg, #2F0291 43.25%, #0038FF 116.9%);
+    border-radius: 80px 15px 15px 15px;
+}
+#skills .photobok{
+    position: relative;
+}
+#skills .contain .photo{
+    position: absolute;
+    width: 421px;
+    height: 483px;
+    top: 31px;
+    left: 50px;
+    background-size: cover;
+    background-image: url(img/fadhluabbad2.png);
 }
 @media screen and (max-width: 1235px){
     #dua{

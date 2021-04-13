@@ -82,6 +82,7 @@ nav button:hover{
     width: 90%;
     height: 740px;
     display: flex;
+    justify-content: space-between;
     /* background: #C4C4C4; */
     align-items: flex-end;
     margin: auto;

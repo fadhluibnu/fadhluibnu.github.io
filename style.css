@@ -4,7 +4,7 @@
   background-color: #fff;
 }
 .bg-dark {
-  background-color: #1a1c36;
+  background-color: #1a1c36 !important;
 }
 .container-fluid {
   max-width: 1400px;

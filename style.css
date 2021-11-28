@@ -77,8 +77,11 @@ h4.home {
   .nav-link {
     border-radius: 10px !important;
   }
+  .nav-link .font-sm {
+    font-size: 14px;
+  }
   .nav-item {
-    width: 94px !important;
+    width: 84px !important;
   }
 
   h1.home {

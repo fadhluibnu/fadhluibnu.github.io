@@ -10,6 +10,9 @@ body {
 .facebook path {
   fill: #e0e0e0;
 }
+.w-100 {
+  width: 100%;
+}
 .nav-link {
   border-radius: 24px !important;
 }
@@ -134,6 +137,33 @@ svg.kotlin {
   margin: auto;
 }
 
+.bg-dark-seccond-sm {
+  background-color: #1a232f;
+}
+.form-control {
+  background: #0b1421 !important;
+  border: none;
+}
+label.label {
+  font-weight: 300 !important;
+}
+.rounded {
+  border-radius: 20px !important;
+}
+.rounded2 {
+  border-radius: 42px;
+}
+.form-floating > .form-control:focus,
+.form-floating > .form-control:not(:placeholder-shown) {
+  padding-top: 1.625rem;
+  padding-bottom: 1rem;
+}
+.form-floating > .form-control {
+  padding: 1.2rem 1.5rem;
+}
+.form-floating > label {
+  padding: 1rem 1.4rem;
+}
 @media (max-width: 767.98px) {
   .fixed-top {
     position: static;

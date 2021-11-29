@@ -14,12 +14,19 @@ body {
 .nav-link {
   border-radius: 24px !important;
 }
-.nav-pills .nav-link.active,
+.nav-link {
+  transition: 0.4s;
+}
+.nav-link.active {
+  background: #1672f5 !important;
+  box-shadow: 0px 4px 24px -6px rgba(22, 114, 245, 0.74) !important;
+}
+/* .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   background: #1672f5 !important;
   box-shadow: 0px 4px 24px -6px rgba(22, 114, 245, 0.74) !important;
   transition: 0.7s;
-}
+} */
 .nav-link.hover:hover,
 .nav-link.hover:hover svg {
   fill: white;
@@ -61,6 +68,73 @@ h4.home {
   color: white;
 }
 
+h2.projects {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+h2.sum-proj {
+  font-weight: bold;
+  font-size: 144px;
+  line-height: 120px;
+
+  color: #1672f5;
+}
+h3.projects {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.img {
+  width: 100%;
+  height: 252px;
+}
+.html,
+.css,
+.kotlin:hover,
+.bootstrap,
+.php,
+.mysql {
+  transition: 1s ease, color 1.6s ease;
+}
+.html:hover,
+.css:hover,
+.kotlin:hover,
+.bootstrap:hover,
+.php:hover,
+.mysql:hover {
+  transform: scale(1.1);
+}
+.html:hover .path-hover,
+.css:hover .path-hover,
+.kotlin:hover .path-hover,
+.bootstrap:hover .path-hover,
+.php:hover .path-hover,
+.mysql:hover .path-hover {
+  fill: #1672f5;
+  transition: 0.4s;
+}
+.kotlin:hover .kotlin-dark {
+  fill: #0b4faf;
+  transition: 0.4s;
+}
+
+svg.html,
+svg.css,
+svg.php,
+svg.mysql,
+svg.bootstrap,
+svg.kotlin {
+  margin: auto;
+}
+
 @media (max-width: 767.98px) {
   .fixed-top {
     position: static;
@@ -94,5 +168,9 @@ h4.home {
     font-size: 24px;
     line-height: 46px;
     font-weight: 400;
+  }
+  h3.projects {
+    font-weight: 600;
+    font-size: 32px;
   }
 }

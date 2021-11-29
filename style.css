@@ -156,6 +156,9 @@ svg.kotlin {
   .nav-item {
     width: 84px !important;
   }
+  .height {
+    height: 75px;
+  }
 
   h1.home {
     font-weight: bold;

@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+}
+.bg-dark {
+  background-color: #0b1421 !important;
+}
+.instagram path,
+.github path,
+.facebook path {
+  fill: #e0e0e0;
+}
+.w-100 {
+  width: 100%;
+}
+.nav-link {
+  border-radius: 24px !important;
+}
+.nav-link {
+  transition: 0.4s;
+}
+.nav-link.active {
+  background: #1672f5 !important;
+  box-shadow: 0px 4px 24px -6px rgba(22, 114, 245, 0.74) !important;
+}
+/* .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background: #1672f5 !important;
+  box-shadow: 0px 4px 24px -6px rgba(22, 114, 245, 0.74) !important;
+  transition: 0.7s;
+} */
+.nav-link.hover:hover,
+.nav-link.hover:hover svg {
+  fill: white;
+  background: #1672f5 !important;
+  box-shadow: 0px 4px 24px -6px rgba(22, 114, 245, 0.74) !important;
+  transition: 0.7s;
+}
+h1.home {
+  font-weight: bold;
+  width: 692px;
+  font-size: 96px;
+  line-height: 115px;
+  text-align: center;
+  color: #ffffff;
+}
+h4.home {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+  color: #dedede;
+}
+
+.my-btn {
+  /* width: 378px;
+  height: 100px;
+  left: 536px;
+  top: 540px; */
+  background: #1672f5;
+  box-shadow: 3px 8px 35px -10px rgb(22 114 245 / 88%);
+  border-radius: 60px;
+  color: white;
+  text-decoration: none;
+}
+.my-btn:hover {
+  transition: 0.7s;
+  background: #1672f5;
+  box-shadow: 4px 16px 50px -20px rgba(22 114 245 / 100%);
+  color: white;
+}
+
+h2.projects {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+h2.sum-proj {
+  font-weight: bold;
+  font-size: 144px;
+  line-height: 120px;
+
+  color: #1672f5;
+}
+h3.projects {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.img {
+  width: 100%;
+  height: 252px;
+}
+.html,
+.css,
+.kotlin:hover,
+.bootstrap,
+.php,
+.mysql {
+  transition: 1s ease, color 1.6s ease;
+}
+.html:hover,
+.css:hover,
+.kotlin:hover,
+.bootstrap:hover,
+.php:hover,
+.mysql:hover {
+  transform: scale(1.1);
+}
+.html:hover .path-hover,
+.css:hover .path-hover,
+.kotlin:hover .path-hover,
+.bootstrap:hover .path-hover,
+.php:hover .path-hover,
+.mysql:hover .path-hover {
+  fill: #1672f5;
+  transition: 0.4s;
+}
+.kotlin:hover .kotlin-dark {
+  fill: #0b4faf;
+  transition: 0.4s;
+}
+
+svg.html,
+svg.css,
+svg.php,
+svg.mysql,
+svg.bootstrap,
+svg.kotlin {
+  margin: auto;
+}
+
+.bg-dark-seccond-sm {
+  background-color: #1a232f;
+}
+.form-control {
+  background: #0b1421 !important;
+  border: none;
+}
+label.label {
+  font-weight: 300 !important;
+}
+.rounded {
+  border-radius: 20px !important;
+}
+.rounded2 {
+  border-radius: 42px;
+}
+.form-floating > .form-control:focus,
+.form-floating > .form-control:not(:placeholder-shown) {
+  padding-top: 1.625rem;
+  padding-bottom: 1rem;
+}
+.form-floating > .form-control {
+  padding: 1.2rem 1.5rem;
+}
+.form-floating > label {
+  padding: 1rem 1.4rem;
+}
+@media (max-width: 767.98px) {
+  .fixed-top {
+    position: static;
+  }
+  .bottom-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .bg-dark-seccond {
+    background-color: #1a232f;
+  }
+  .nav-link {
+    border-radius: 10px !important;
+  }
+  .nav-link .font-sm {
+    font-size: 14px;
+  }
+  .nav-item {
+    width: 84px !important;
+  }
+  .height {
+    height: 75px;
+  }
+
+  h1.home {
+    font-weight: bold;
+    width: 100%;
+    font-size: 50px;
+    line-height: 63px;
+  }
+  h4.home {
+    font-size: 24px;
+    line-height: 46px;
+    font-weight: 400;
+  }
+  h3.projects {
+    font-weight: 600;
+    font-size: 32px;
+  }
+}

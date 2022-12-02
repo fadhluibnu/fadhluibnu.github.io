@@ -9,9 +9,13 @@ body {
 
 .bg-navbar {
     background-color: var(--bg-primary-seccond);
+    transition: .3s;
+    background: rgb(237 246 249 / 70%);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
-.content {
+#content {
     overflow-x: hidden;
 }
 
@@ -157,6 +161,47 @@ a.navbar-brand {
 /* section 1 */
 
 
+/* section 2 */
+
+#section2 {
+    margin-top: 120px;
+}
+
+.heading1-section {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 57px;
+    letter-spacing: 0.02em;
+    color: #01161E;
+}
+
+.heading2-section {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+    color: #01161E;
+    margin: 0;
+}
+
+.body-section {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #2A2D33;
+    margin: 0;
+}
+
+/* section 2 */
+
+
 /* media query */
 
 @media (min-width: 767.98px) {
@@ -172,6 +217,11 @@ a.navbar-brand {
 @media (max-width: 991.98px) {
 
     /* section 1 */
+
+    
+    #section1 .contain-about{
+        height: 65vh !important;
+    }
     #section1 .box-skills-role {
         display: none;
     }
@@ -184,11 +234,21 @@ a.navbar-brand {
         width: 410.75px;
         height: 900.22px;
     }
-    .background-blue .photo{
+
+    .background-blue .photo {
         left: -73px;
     }
 
     /* section 1 */
+
+    /* section 2 */
+
+    
+    #section2{
+        margin-top: 10px;
+    }
+
+    /* section 2 */
 
 }
 

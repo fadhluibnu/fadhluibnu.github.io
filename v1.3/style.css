@@ -1,0 +1,360 @@
+body {
+    background: #EDF6F9;
+}
+
+:root {
+    --bg-primary: #2C57F4 !important;
+    --bg-primary-seccond: #EDF6F9 !important;
+}
+
+.bg-navbar {
+    background-color: var(--bg-primary-seccond);
+    transition: .3s;
+    background: rgb(237 246 249 / 70%);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+#content {
+    overflow-x: hidden;
+}
+
+.bg-primary {
+    background: #2C57F4 !important;
+}
+
+.bg-primary-seccond {
+    background: #E1E8FC !important;
+}
+
+.text-white {
+    color: #EDF6F9 !important;
+}
+
+.text-blue {
+    color: #2C57F4 !important;
+}
+
+/* navbar */
+
+a.navbar-brand {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+    color: #01161E;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #2A2D33;
+}
+
+.navbar button {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2C57F4;
+    padding: 12px 21px;
+}
+
+/* navbar */
+
+
+/* section 1 */
+
+.heading-s-1 {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 71px;
+    letter-spacing: 0.02em;
+    color: #01161E;
+}
+
+.my-btn {
+    padding: 16px 36px;
+    box-sizing: border-box;
+    text-decoration: none;
+    border-radius: 6px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.my-btn:hover {
+    color: white;
+}
+
+.paragraph-s-1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+    color: #2A2D33;
+}
+
+.box-skills-role {
+    top: 50px;
+    left: -35px;
+}
+
+.skils-role {
+    display: inline-block;
+    width: 270px;
+    padding: 22px 0;
+    background: rgba(44, 87, 244, 0.3);
+    border-radius: 16px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    border: 1px solid rgba(237, 246, 249, 0.1);
+}
+
+.skils-role span {
+    margin: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    color: #01161E;
+}
+
+.background-blue {
+    width: 508.75px;
+    height: 847.22px;
+    background: #2C57F4;
+    border-radius: 300px;
+    transform: rotate(10.95deg);
+    top: -235px;
+    right: -96px;
+    z-index: -10;
+    overflow: hidden;
+}
+
+.photo {
+    width: 554px;
+    height: 622px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(-10.95deg);
+    position: absolute;
+    bottom: 0;
+    left: -30px;
+    background-image: url(/assets/fadhluibnuabbad-removebg-preview.png);
+}
+
+/* section 1 */
+
+
+/* section 2 */
+
+#section2 {
+    margin-top: 120px;
+}
+
+.heading1-section {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 57px;
+    letter-spacing: 0.02em;
+    color: #01161E;
+}
+
+.heading2-section {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+    color: #01161E;
+    margin: 0;
+}
+
+.body-section {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #2A2D33;
+    margin: 0;
+}
+
+/* section 2 */
+
+
+/* media query */
+
+@media (min-width: 767.98px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+}
+
+@media (max-width: 991.98px) {
+
+    /* section 1 */
+
+    
+    #section1 .contain-about{
+        height: 65vh !important;
+    }
+    #section1 .box-skills-role {
+        display: none;
+    }
+
+    #section1 .box-about .d-flex.button {
+        flex-direction: column;
+    }
+
+    .background-blue {
+        width: 410.75px;
+        height: 900.22px;
+    }
+
+    .background-blue .photo {
+        left: -73px;
+    }
+
+    /* section 1 */
+
+    /* section 2 */
+
+    
+    #section2{
+        margin-top: 10px;
+    }
+
+    /* section 2 */
+
+}
+
+@media (max-width: 767.98px) {
+    .navbar {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1030;
+        background-color: var(--bg-primary-seccond);
+    }
+
+    .navbar .container {
+        flex-direction: row-reverse;
+        padding: 0 !important;
+    }
+
+    .navbar-collapse {
+        background-color: var(--bg-primary-seccond);
+        padding: 12px;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar-nav .nav-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-link i {
+        display: inline-block !important;
+        font-size: 25px;
+    }
+
+    .navbar-brand {
+        padding-left: 12px;
+        order: 3;
+    }
+
+    .navbar-toggler {
+        margin-right: 12px !important;
+        order: 2;
+    }
+
+    #navbarNavAltMarkup {
+        order: 1;
+    }
+
+    .navbar-collapse button {
+        margin-top: 10px;
+        width: 100%;
+        background-color: var(--bg-primary);
+        color: var(--bg-primary-seccond);
+    }
+
+    /* section 1 */
+
+
+    #section1 .row {
+        flex-direction: column-reverse;
+    }
+
+    #section1 .row .col-6 {
+        width: 100%;
+    }
+
+    #section1 .box-about {
+        margin-top: 10px !important;
+    }
+
+    #section1 .heading-s-1 {
+        font-size: 34px;
+        line-height: normal;
+    }
+
+    #section1 .heading-s-1 br {
+        display: none;
+    }
+
+    #section1 .photo-box {
+        height: 450px;
+    }
+
+    #section1 .box-skills-role {
+        display: none;
+    }
+
+    #section1 .photo-box .background-blue {
+        width: 476px;
+        height: 684.22px;
+        right: 0;
+        left: 0;
+    }
+
+    #section1 .photo-box .background-blue .photo {
+        height: 469px;
+        left: 25px;
+        bottom: -14px;
+    }
+
+    /* section 1 */
+}
+
+/* media query */

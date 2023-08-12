@@ -100,9 +100,13 @@ h3.projects {
 }
 .html,
 .css,
-.kotlin:hover,
+.kotlin,
 .bootstrap,
 .php,
+.laravel,
+.javascript,
+.nodejs,
+.reactjs,
 .mysql {
   transition: 1s ease, color 1.6s ease;
 }
@@ -111,6 +115,10 @@ h3.projects {
 .kotlin:hover,
 .bootstrap:hover,
 .php:hover,
+.laravel:hover,
+.javascript:hover,
+.nodejs:hover,
+.reactjs:hover,
 .mysql:hover {
   transform: scale(1.1);
 }
@@ -119,10 +127,20 @@ h3.projects {
 .kotlin:hover .path-hover,
 .bootstrap:hover .path-hover,
 .php:hover .path-hover,
+.laravel:hover .path-hover,
+.javascript:hover .path-hover,
+.nodejs:hover .path-hover,
+.reactjs:hover .path-hover,
 .mysql:hover .path-hover {
   fill: #1672f5;
   transition: 0.4s;
 }
+
+.reactjs:hover .stroke-hover{
+  stroke: #1672f5;
+  transition: 0.4s;
+}
+
 .kotlin:hover .kotlin-dark {
   fill: #0b4faf;
   transition: 0.4s;

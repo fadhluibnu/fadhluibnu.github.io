@@ -1,28 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 body {
   font-family: "Poppins", sans-serif;
 }
+
+.my-bg-dark {
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  background: rgb(11 20 33 / 70%) !important;
+}
+
 .bg-dark {
   background-color: #0b1421 !important;
 }
+
 .instagram path,
 .github path,
 .facebook path {
   fill: #e0e0e0;
 }
+
 .w-100 {
   width: 100%;
 }
+
 .nav-link {
   border-radius: 24px !important;
 }
+
 .nav-link {
   transition: 0.4s;
 }
+
 .nav-link.active {
   background: #1672f5 !important;
   box-shadow: 0px 4px 24px -6px rgba(22, 114, 245, 0.74) !important;
 }
+
 /* .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   background: #1672f5 !important;
@@ -30,12 +44,14 @@ body {
   transition: 0.7s;
 } */
 .nav-link.hover:hover,
+.info-container .btn:hover,
 .nav-link.hover:hover svg {
   fill: white;
   background: #1672f5 !important;
   box-shadow: 0px 4px 24px -6px rgba(22, 114, 245, 0.74) !important;
   transition: 0.7s;
 }
+
 h1.home {
   font-weight: bold;
   width: 692px;
@@ -44,6 +60,7 @@ h1.home {
   text-align: center;
   color: #ffffff;
 }
+
 h4.home {
   text-transform: capitalize;
   font-weight: 500;
@@ -63,6 +80,7 @@ h4.home {
   color: white;
   text-decoration: none;
 }
+
 .my-btn:hover {
   transition: 0.7s;
   background: #1672f5;
@@ -78,6 +96,7 @@ h2.projects {
   letter-spacing: 0.02em;
   color: #ffffff;
 }
+
 h2.sum-proj {
   font-weight: bold;
   font-size: 144px;
@@ -85,6 +104,7 @@ h2.sum-proj {
 
   color: #1672f5;
 }
+
 h3.projects {
   font-weight: bold;
   font-size: 48px;
@@ -94,10 +114,36 @@ h3.projects {
   color: #ffffff;
 }
 
-.img {
-  width: 100%;
+/* .img { */
+/* width: 100%; */
+/* height: 252px; */
+/* } */
+.images {
   height: 252px;
+  object-fit: contain;
+  transform: scale(1.4);
+  transition: 300ms;
 }
+
+.img:hover .images {
+  transform: scale(1);
+}
+
+.info-container{
+  bottom: -100px;
+  transition: 400ms;
+}
+
+.img:hover .info-container {
+  bottom: 0;
+}
+
+.info {
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(3px);
+  background: rgba(137, 142, 150, 0.7) !important;
+}
+
 .html,
 .css,
 .kotlin,
@@ -110,6 +156,7 @@ h3.projects {
 .mysql {
   transition: 1s ease, color 1.6s ease;
 }
+
 .html:hover,
 .css:hover,
 .kotlin:hover,
@@ -122,6 +169,7 @@ h3.projects {
 .mysql:hover {
   transform: scale(1.1);
 }
+
 .html:hover .path-hover,
 .css:hover .path-hover,
 .kotlin:hover .path-hover,
@@ -136,7 +184,7 @@ h3.projects {
   transition: 0.4s;
 }
 
-.reactjs:hover .stroke-hover{
+.reactjs:hover .stroke-hover {
   stroke: #1672f5;
   transition: 0.4s;
 }
@@ -158,52 +206,66 @@ svg.kotlin {
 .bg-dark-seccond-sm {
   background-color: #1a232f;
 }
+
 .form-control {
   background: #0b1421 !important;
   border: none;
 }
+
 label.label {
   font-weight: 300 !important;
 }
+
 .rounded {
   border-radius: 20px !important;
 }
+
 .rounded2 {
   border-radius: 42px;
 }
-.form-floating > .form-control:focus,
-.form-floating > .form-control:not(:placeholder-shown) {
+
+.form-floating>.form-control:focus,
+.form-floating>.form-control:not(:placeholder-shown) {
   padding-top: 1.625rem;
   padding-bottom: 1rem;
 }
-.form-floating > .form-control {
+
+.form-floating>.form-control {
   padding: 1.2rem 1.5rem;
 }
-.form-floating > label {
+
+.form-floating>label {
   padding: 1rem 1.4rem;
 }
+
 @media (max-width: 767.98px) {
   .fixed-top {
     position: static;
   }
+
   .bottom-fixed {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
   }
+
   .bg-dark-seccond {
     background-color: #1a232f;
   }
+
   .nav-link {
     border-radius: 10px !important;
   }
+
   .nav-link .font-sm {
     font-size: 14px;
   }
+
   .nav-item {
     width: 84px !important;
   }
+
   .height {
     height: 75px;
   }
@@ -214,11 +276,13 @@ label.label {
     font-size: 50px;
     line-height: 63px;
   }
+
   h4.home {
     font-size: 24px;
     line-height: 46px;
     font-weight: 400;
   }
+
   h3.projects {
     font-weight: 600;
     font-size: 32px;

@@ -7,7 +7,7 @@ body {
 .my-bg-dark {
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
-  background: rgb(11 20 33 / 70%) !important;
+  background-color: rgb(11 20 33 / 70%) !important;
 }
 
 .bg-dark {
@@ -129,7 +129,7 @@ h3.projects {
   transform: scale(1);
 }
 
-.info-container{
+.info-container {
   bottom: -100px;
   transition: 400ms;
 }
@@ -239,8 +239,10 @@ label.label {
 }
 
 @media (max-width: 767.98px) {
-  .fixed-top {
-    position: static;
+  .my-bg-dark {
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: none;
+    background-color: #0b1421 !important;
   }
 
   .bottom-fixed {

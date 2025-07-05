@@ -8,13 +8,6 @@ body {
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
   background-color: rgb(11 20 33 / 70%) !important;
-  transition: all 0.3s ease;
-}
-
-.navbar-top {
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  background-color: transparent !important;
 }
 
 .bg-dark {

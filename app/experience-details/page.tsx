@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { siteConfig } from '@/lib/site-config'
 import { JsonLd } from '@/components/seo/json-ld'
+import { PageTransition } from '@/components/animation/page-transition'
 import ExperienceDetailsPage from "@/components/experience-details/experience-details-page";
 
 const pageTitle = "Experience Details"
@@ -75,9 +76,9 @@ const webPageJsonLd = {
 
 export default function ExperienceDetailsRoute() {
   return (
-    <>
+    <PageTransition>
       <JsonLd data={[breadcrumbJsonLd, webPageJsonLd]} />
       <ExperienceDetailsPage />
-    </>
+    </PageTransition>
   );
 }

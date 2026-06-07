@@ -2,6 +2,7 @@ import PortfolioHomePage from "@/components/portfolio/portfolio-home-page";
 import type { Metadata } from 'next'
 import { siteConfig } from '@/lib/site-config'
 import { JsonLd } from '@/components/seo/json-ld'
+import { PageTransition } from '@/components/animation/page-transition'
 
 export const metadata: Metadata = {
   title: "Fadhlu Ibnu - Backend Developer, AI Developer & Software Engineer",
@@ -75,9 +76,9 @@ const websiteJsonLd = {
 
 export default function Home() {
   return (
-    <>
+    <PageTransition>
       <JsonLd data={[personJsonLd, websiteJsonLd]} />
       <PortfolioHomePage />
-    </>
+    </PageTransition>
   );
 }

@@ -12,6 +12,7 @@ import ProjectsSection from "./sections/projects-section";
 import CertificationsSection from "./sections/certifications-section";
 import ContactSection from "./sections/contact-section";
 import BottomNavigation from "./ui/bottom-navigation";
+import { PageTransition } from "@/components/animation/page-transition";
 
 export default function PortfolioHomePage() {
   const activeSection = useActiveSection(SECTION_IDS);
@@ -24,19 +25,21 @@ export default function PortfolioHomePage() {
 
   return (
     <div className="page">
-      <HeroSection onCopyEmail={copyEmail} />
-      <AboutSection onCopyEmail={copyEmail} />
-      <ExperienceSection />
-      <ProjectsSection />
-      <CertificationsSection />
-      <ContactSection
-        contactForm={contactForm}
-        errors={contactErrors}
-        onChange={handleContactInputChange}
-        onCopyEmail={copyEmail}
-        onSubmit={handleContactSubmit}
-        isSubmitting={isSubmitting}
-      />
+      <PageTransition>
+        <HeroSection onCopyEmail={copyEmail} />
+        <AboutSection onCopyEmail={copyEmail} />
+        <ExperienceSection />
+        <ProjectsSection />
+        <CertificationsSection />
+        <ContactSection
+          contactForm={contactForm}
+          errors={contactErrors}
+          onChange={handleContactInputChange}
+          onCopyEmail={copyEmail}
+          onSubmit={handleContactSubmit}
+          isSubmitting={isSubmitting}
+        />
+      </PageTransition>
       <BottomNavigation activeSection={activeSection} />
       <div className={`copy-toast${isToastVisible ? " show" : ""}`}>{toastMessage}</div>
     </div>

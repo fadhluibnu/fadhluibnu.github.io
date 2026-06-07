@@ -76,9 +76,9 @@ const websiteJsonLd = {
 
 export default function Home() {
   return (
-    <PageTransition>
+    <>
       <JsonLd data={[personJsonLd, websiteJsonLd]} />
       <PortfolioHomePage />
-    </PageTransition>
+    </>
   );
 }

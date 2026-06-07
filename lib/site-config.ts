@@ -1,0 +1,31 @@
+export const siteConfig = {
+  name: "Fadhlu Ibnu 'Abbad",
+  shortName: 'Fadhlu Ibnu',
+  url: 'https://fadhluibnu.my.id',
+  email: 'fadhluibnua@gmail.com',
+  location: 'Semarang, Indonesia',
+  locale: 'en_US',
+  language: 'en',
+  title: "Fadhlu Ibnu 'Abbad — Backend Developer & AI Developer",
+  description:
+    "Portfolio of Fadhlu Ibnu 'Abbad, a Backend Developer and AI Developer from Semarang, Indonesia, focused on backend architecture, web applications, RAG systems, and scalable software development.",
+  keywords: [
+    "Fadhlu Ibnu",
+    "Fadhlu Ibnu Abbad",
+    "Backend Developer",
+    "AI Developer",
+    "Software Engineer",
+    "RAG Developer",
+    "Web Developer",
+    "Node.js Developer",
+    "Laravel Developer",
+    "System Architecture",
+    "Semarang Indonesia",
+  ],
+  ogImage: '/og/fadhlu-ibnu-portfolio.png',
+  links: {
+    github: 'https://github.com/fadhluibnu',
+    linkedin: 'https://www.linkedin.com/in/fadhluibnu/',
+    website: 'https://fadhluibnu.my.id',
+  },
+} as const

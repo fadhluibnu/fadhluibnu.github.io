@@ -1,9 +1,21 @@
-import type { MetadataRoute } from "next";
+import type { MetadataRoute } from 'next'
+import { siteConfig } from '@/lib/site-config'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://fadhluibnu.my.id";
+  const now = new Date()
+
   return [
-    { url: base, lastModified: new Date(), changeFrequency: "monthly", priority: 1 },
-    { url: `${base}/experience-details`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
-  ];
+    {
+      url: `${siteConfig.url}/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 1,
+    },
+    {
+      url: `${siteConfig.url}/experience-details`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+  ]
 }

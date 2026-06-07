@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+import { siteConfig } from "@/lib/site-config";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -13,33 +14,59 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://fadhluibnu.my.id"),
+  metadataBase: new URL(siteConfig.url),
+  applicationName: siteConfig.shortName,
   title: {
-    default: "Fadhlu Ibnu — Backend Developer & FullStack Engineer | Portfolio",
-    template: "%s | Fadhlu Ibnu",
+    default: siteConfig.title,
+    template: `%s — ${siteConfig.shortName}`,
   },
-  description:
-    "Portfolio Fadhlu Ibnu, Backend Developer & FullStack Engineer. Lihat proyek, pengalaman, dan keahlian dalam membangun aplikasi web modern.",
-  keywords: ["Fadhlu Ibnu", "Backend Developer", "FullStack Engineer", "Portfolio", "Next.js", "React"],
-  authors: [{ name: "Fadhlu Ibnu", url: "https://fadhluibnu.my.id" }],
-  creator: "Fadhlu Ibnu",
-  alternates: { canonical: "/" },
+  description: siteConfig.description,
+  keywords: [...siteConfig.keywords],
+  authors: [{ name: siteConfig.name, url: siteConfig.url }],
+  creator: siteConfig.name,
+  publisher: siteConfig.name,
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
-    type: "website",
-    locale: "id_ID",
-    url: "https://fadhluibnu.my.id",
-    siteName: "Fadhlu Ibnu Portfolio",
-    title: "Fadhlu Ibnu — Backend Developer & FullStack Engineer",
-    description: "Portfolio Fadhlu Ibnu, Backend Developer & FullStack Engineer.",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Fadhlu Ibnu Portfolio" }],
+    type: 'website',
+    locale: siteConfig.locale,
+    url: siteConfig.url,
+    siteName: siteConfig.shortName,
+    title: siteConfig.title,
+    description: siteConfig.description,
+    images: [
+      {
+        url: siteConfig.ogImage,
+        width: 1200,
+        height: 630,
+        alt: "Fadhlu Ibnu 'Abbad portfolio preview",
+      },
+    ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Fadhlu Ibnu — Backend Developer & FullStack Engineer",
-    description: "Portfolio Fadhlu Ibnu, Backend Developer & FullStack Engineer.",
-    images: ["/og-image.png"],
+    card: 'summary_large_image',
+    title: siteConfig.title,
+    description: siteConfig.description,
+    images: [siteConfig.ogImage],
   },
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#020617',
 };
 
 export default function RootLayout({
@@ -49,7 +76,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="id"
+      lang={siteConfig.language}
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>

@@ -15,7 +15,7 @@ export default function CertificationsSection() {
       <div className="certifications-grid">
         {certifications.map((certification) => (
           <article className="certification-card" key={certification.id}>
-            <CertificatePreview />
+            <CertificatePreview imageUrl={certification.image} />
             <h3 className="certification-name">{certification.name}</h3>
             <p className="certification-provider">{certification.provider}</p>
             <div className="certification-badge">

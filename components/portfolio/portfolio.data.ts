@@ -141,13 +141,40 @@ export const projects: ProjectItem[] = [
   },
 ];
 
-export const certifications: CertificationItem[] = Array.from({ length: 6 }, (_, index) => ({
-  id: index + 1,
-  name: "Belajar Dasar AI",
-  provider: "Dicoding Indonesia",
-  status: "Obtained",
-  date: "December 2024",
-}));
+export const certifications: CertificationItem[] = [
+  {
+    id: 1,
+    name: "Alibaba Cloud Certified Associate",
+    provider: "Alibaba Cloud",
+    status: "Obtained",
+    date: "2024",
+    image: "/assets/certificate/alibaba-cloud.jpeg",
+  },
+  {
+    id: 2,
+    name: "Belajar Dasar AI",
+    provider: "Dicoding Indonesia",
+    status: "Obtained",
+    date: "2024",
+    image: "/assets/certificate/belajar-dasar-ai.png",
+  },
+  {
+    id: 3,
+    name: "Belajar Dasar Pemrograman Python",
+    provider: "Dicoding Indonesia",
+    status: "Obtained",
+    date: "2024",
+    image: "/assets/certificate/belajar-python-dicoding.png",
+  },
+  {
+    id: 4,
+    name: "DIMAS-TI 2024",
+    provider: "Universitas Terkait",
+    status: "Obtained",
+    date: "2024",
+    image: "/assets/certificate/dimas-ti-2024.png",
+  },
+];
 
 export const focusTags = ["Backend Development", "System Architecture", "AI Integration", "Web Application"];
 

@@ -45,6 +45,7 @@ export type CertificationItem = {
   provider: string;
   status: string;
   date: string;
+  image?: string;
 };
 
 export type ContactFormState = {

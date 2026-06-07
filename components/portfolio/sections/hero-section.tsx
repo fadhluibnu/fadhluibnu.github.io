@@ -60,7 +60,7 @@ export default function HeroSection({ onCopyEmail }: { onCopyEmail: () => void }
           <br className="hidden sm:block" /> build things that live on the internet.
         </p>
         <div className="hero-actions">
-          <PrimaryButton href="#cv">
+          <PrimaryButton href="https://drive.google.com/file/d/1HIduSk-nCCV7RW1-ife-ec33zxriJAuz/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             <span>Download CV</span>
             <DownloadIcon />
           </PrimaryButton>

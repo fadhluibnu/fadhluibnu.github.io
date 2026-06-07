@@ -34,7 +34,7 @@ export default function AboutSection({ onCopyEmail }: { onCopyEmail: () => void 
               <span>email: {CONTACT_EMAIL}</span>
               <CopyIcon />
             </button>
-            <PrimaryButton href="#cv">
+            <PrimaryButton href="https://drive.google.com/file/d/1HIduSk-nCCV7RW1-ife-ec33zxriJAuz/view?usp=sharing" target="_blank" rel="noopener noreferrer">
               <span>Download CV</span>
               <DownloadIcon />
             </PrimaryButton>

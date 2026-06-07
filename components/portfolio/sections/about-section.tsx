@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { CONTACT_EMAIL } from "../portfolio.data";
 import { CopyIcon, DownloadIcon } from "../icons/portfolio-icons";
 import PrimaryButton from "../ui/primary-button";
@@ -43,9 +44,15 @@ export default function AboutSection({ onCopyEmail }: { onCopyEmail: () => void 
         </div>
 
         <div className="about-visual" aria-hidden="true">
-          <div className="portrait-placeholder">
-            <div className="portrait-vignette" />
-          </div>
+          {/* <div className="portrait-placeholder"> */}
+          <Image
+            src="/assets/photo/profile-section-2.png"
+            alt="Portrait of Fadhlu Ibnu"
+            fill
+            className="object-cover"
+          />
+          {/* <div className="portrait-vignette" />
+          </div> */}
         </div>
 
         <div className="name-card glass-card">Hi, I’m Fadhlu Ibnu `Abbad 👋</div>

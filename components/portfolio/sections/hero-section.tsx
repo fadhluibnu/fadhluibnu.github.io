@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { CONTACT_EMAIL, socialLinks } from "../portfolio.data";
 import { ArrowUpRightIcon, CopyIcon, DownloadIcon } from "../icons/portfolio-icons";
 import PrimaryButton from "../ui/primary-button";
@@ -8,7 +9,13 @@ export default function HeroSection({ onCopyEmail }: { onCopyEmail: () => void }
     <section className="hero-section" id="home">
       <header className="topbar">
         <a href="#home" className="brand" aria-label="Fadhlu Ibnu">
-          <span className="brand-mark" aria-hidden="true" />
+          <Image
+            src="/assets/logo/logo-fadhluibnu.png"
+            alt="Fadhlu Ibnu Logo"
+            width={38}
+            height={38}
+            className="brand-mark object-cover"
+          />
           <span className="brand-text">Fadhlu Ibnu</span>
         </a>
 
@@ -31,7 +38,13 @@ export default function HeroSection({ onCopyEmail }: { onCopyEmail: () => void }
         ))}
 
         <div className="hello-pill">
-          <span className="hello-avatar" aria-hidden="true" />
+          <Image
+            src="/assets/photo/small-photo.png"
+            alt="Fadhlu Ibnu Avatar"
+            width={41}
+            height={41}
+            className="hello-avatar object-cover"
+          />
           <span>Hello, I’m Fadhlu Ibnu</span>
         </div>
       </section>

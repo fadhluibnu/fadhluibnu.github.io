@@ -36,6 +36,7 @@ export type ProjectItem = {
   description: string;
   techStack: string[];
   githubUrl?: string;
+  websiteUrl?: string;
 };
 
 export type CertificationItem = {

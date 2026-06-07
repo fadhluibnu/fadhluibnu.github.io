@@ -20,23 +20,29 @@ export default function ProjectsSection() {
                 </span>
               ))}
             </div>
-            <PhonePreview />
+            {/* <PhonePreview /> */}
             {project.githubUrl ? (
               <a className="github-project-btn" href={project.githubUrl} aria-label="Open GitHub project" target="_blank" rel="noreferrer">
                 <span>GitHub</span>
                 <GitHubMarkIcon />
               </a>
             ) : null}
+            {project.websiteUrl ? (
+              <a className="github-project-btn" href={project.websiteUrl} aria-label="Visit Website" target="_blank" rel="noreferrer">
+                <span>Visit Site</span>
+                <ArrowUpRightIcon />
+              </a>
+            ) : null}
           </article>
         ))}
       </div>
 
-      <div className="project-cta-wrap">
+      {/* <div className="project-cta-wrap">
         <a className="project-cta" href="#all-projects">
           <span>View All Projects</span>
           <ArrowUpRightIcon />
         </a>
-      </div>
+      </div> */}
     </section>
   );
 }

@@ -116,28 +116,28 @@ export const experiences: ExperienceItem[] = [
 
 export const projects: ProjectItem[] = [
   {
-    title: "Mango Leaf Detection",
-    description: "Mango leaf disease detection system using Computer Vision and Deep Learning",
-    techStack: ["Python", "Tensorflow", "Flask", "Bootstrap"],
-    githubUrl: "https://github.com/fadhluibnu",
+    title: "E-Learning Sinar Research",
+    description: "An intuitive e-learning platform developed for Sinar Research to facilitate online education and training. Built seamlessly with PHP and customized WordPress architecture, ensuring a robust content management system, scalable user access, and an engaging learning experience for students and instructors alike.",
+    techStack: ["PHP", "WordPress", "MySQL"],
+    websiteUrl: "https://sinarresearch.com",
   },
   {
     title: "Hafalan Santri",
-    description:
-      "A system for recording students' memorization and managing Islamic boarding schools from the foundation to the branches.",
-    techStack: ["PHP", "Laravel", "Node JS", "React", "MySQL"],
+    description: "A comprehensive management system designed for Islamic boarding schools, connecting main campuses with their branches. The platform streamlines student registrations, staff management, and features automated recitation (hafalan) progress monitoring, final exam evaluations, and automated report card generation.",
+    techStack: ["PHP", "Laravel", "React JS", "MySQL"],
+    githubUrl: "https://github.com/fadhluibnu/hafalan_santri",
   },
   {
-    title: "Hafalan Santri",
-    description:
-      "A system for recording students' memorization and managing Islamic boarding schools from the foundation to the branches.",
-    techStack: ["PHP", "Laravel", "Node JS", "React", "MySQL"],
+    title: "Si-Komputer",
+    description: "An inventory management system developed as an IT contribution during an internship at the Department of Energy and Mineral Resources (ESDM) of Central Java. The application tracks computer hardware assets, monitors maintenance schedules, and manages equipment distribution, greatly improving operational efficiency.",
+    techStack: ["PHP", "Laravel", "MySQL"],
+    githubUrl: "https://github.com/fadhluibnu/si-komputer.git",
   },
   {
-    title: "Mango Leaf Detection",
-    description: "Mango leaf disease detection system using Computer Vision and Deep Learning",
-    techStack: ["Python", "Tensorflow", "Flask", "Bootstrap"],
-    githubUrl: "https://github.com/fadhluibnu",
+    title: "Sinar AI",
+    description: "An advanced AI-powered platform tailored to assist students in composing academic theses effortlessly. Sinar AI eliminates the need for complex prompting while sourcing valid, up-to-date academic references. The system features a high-performance web interface and a robust backend capable of handling complex AI integrations.",
+    techStack: ["JavaScript", "Node.js", "Express", "Next.js", "PostgreSQL", "MySQL"],
+    websiteUrl: "https://sinarai.sinarresearch.com",
   },
 ];
 

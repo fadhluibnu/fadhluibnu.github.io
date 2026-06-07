@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { experiences } from "../portfolio.data";
 import { ArrowUpRightIcon, BriefcaseIcon, ClockIcon, LinkIcon } from "../icons/portfolio-icons";
 import MetaBlock from "../ui/meta-block";
@@ -47,10 +48,10 @@ export default function ExperienceSection() {
       </div>
 
       <div className="experience-cta-wrap">
-        <a className="experience-cta" href="#experience-details">
+        <Link className="experience-cta" href="/experience-details">
           <span>View All Experience Details</span>
           <ArrowUpRightIcon />
-        </a>
+        </Link>
       </div>
     </section>
   );

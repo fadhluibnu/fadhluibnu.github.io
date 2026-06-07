@@ -51,7 +51,7 @@ export const experiences: ExperienceItem[] = [
     logo: "sinar",
     logoClass: "logo-sinar",
     logoImage: "/assets/experience/sinar.jpg",
-    type: "Work Partime",
+    type: "Work Fulltime",
     role: "AI Developer and Website Manager",
     duration: "Agust 2025 - Present",
     ongoing: true,

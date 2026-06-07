@@ -12,6 +12,7 @@ import type {
 export function useContactForm(recipientEmail: string, showToast: (message?: string) => void) {
   const [contactForm, setContactForm] = useState<ContactFormState>(initialContactForm);
   const [contactErrors, setContactErrors] = useState<ContactFormErrors>({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleContactInputChange: ContactInputChangeHandler = (event) => {
     const fieldName = event.target.name as keyof ContactFormState;
@@ -37,25 +38,50 @@ export function useContactForm(recipientEmail: string, showToast: (message?: str
     return Object.keys(nextErrors).length === 0;
   };
 
-  const handleContactSubmit: ContactSubmitHandler = (event) => {
+  const handleContactSubmit: ContactSubmitHandler = async (event) => {
     event.preventDefault();
+
+    const formElement = event.currentTarget as HTMLFormElement;
+    const honey = (formElement.elements.namedItem('_honey') as HTMLInputElement)?.value;
+    if (honey) return;
 
     if (!validateContactForm()) {
       showToast("Lengkapi form terlebih dahulu");
       return;
     }
 
-    const name = contactForm.name.trim();
-    const senderEmail = contactForm.email.trim();
-    const subject = contactForm.subject.trim();
-    const message = contactForm.message.trim();
-    const body = `Halo Ibnu,\n\n${message}\n\nRegards,\n${name}\n${senderEmail}`;
+    setIsSubmitting(true);
+    showToast("Mengirim pesan...");
 
-    window.location.href = `mailto:${recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    showToast("Email draft siap dibuka");
-    setContactForm(initialContactForm);
-    setContactErrors({});
+    const formData = new FormData();
+    formData.append("Name", contactForm.name.trim());
+    formData.append("Email", contactForm.email.trim());
+    formData.append("Subject", contactForm.subject.trim());
+    formData.append("Message", contactForm.message.trim());
+
+    try {
+      const url = process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL;
+      if (!url) throw new Error("URL webhook tidak ditemukan");
+
+      const res = await fetch(url, {
+        method: "POST",
+        body: formData,
+      });
+      const data = await res.json();
+
+      if (data.result === "success") {
+        showToast("Pesan berhasil dikirim!");
+        setContactForm(initialContactForm);
+        setContactErrors({});
+      } else {
+        showToast("Gagal: " + (data.message || "Unknown error"));
+      }
+    } catch (error: any) {
+      showToast("Error jaringan: " + error.message);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
-  return { contactForm, contactErrors, handleContactInputChange, handleContactSubmit };
+  return { contactForm, contactErrors, isSubmitting, handleContactInputChange, handleContactSubmit };
 }

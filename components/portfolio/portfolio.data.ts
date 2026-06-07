@@ -15,13 +15,13 @@ export const socialLinks: SocialLink[] = [
   {
     key: "linkedin",
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/fadhlu-ibnu/",
+    href: "https://www.linkedin.com/in/fadhluibnu/",
     positionClass: "linkedin",
   },
-  { key: "instagram", label: "Instagram", href: "#instagram", positionClass: "instagram" },
-  { key: "twitter", label: "Twitter", href: "#twitter", positionClass: "twitter" },
+  { key: "instagram", label: "Instagram", href: "https://www.instagram.com/fadhluibnu", positionClass: "instagram" },
+  { key: "twitter", label: "Twitter", href: "https://x.com/fadhluibnu", positionClass: "twitter" },
   { key: "github", label: "GitHub", href: "https://github.com/fadhluibnu", positionClass: "github" },
-  { key: "tiktok", label: "TikTok", href: "#tiktok", positionClass: "tiktok" },
+  { key: "tiktok", label: "TikTok", href: "https://www.tiktok.com/@keeplearning.com", positionClass: "tiktok" },
 ];
 
 export const navigationItems: NavigationItem[] = [

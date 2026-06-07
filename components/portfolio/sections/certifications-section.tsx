@@ -27,12 +27,12 @@ export default function CertificationsSection() {
         ))}
       </div>
 
-      <div className="certification-cta-wrap">
+      {/* <div className="certification-cta-wrap">
         <a className="certification-cta" href="#all-certifications">
           <span>View All Certifications</span>
           <ArrowUpRightIcon />
         </a>
-      </div>
+      </div> */}
     </section>
   );
 }

@@ -17,7 +17,7 @@ export default function PortfolioHomePage() {
   const activeSection = useActiveSection(SECTION_IDS);
   const { toastMessage, isToastVisible, showToast } = useToast();
   const copyEmail = useCopyEmail(CONTACT_EMAIL, showToast);
-  const { contactForm, contactErrors, handleContactInputChange, handleContactSubmit } = useContactForm(
+  const { contactForm, contactErrors, isSubmitting, handleContactInputChange, handleContactSubmit } = useContactForm(
     CONTACT_EMAIL,
     showToast,
   );
@@ -35,6 +35,7 @@ export default function PortfolioHomePage() {
         onChange={handleContactInputChange}
         onCopyEmail={copyEmail}
         onSubmit={handleContactSubmit}
+        isSubmitting={isSubmitting}
       />
       <BottomNavigation activeSection={activeSection} />
       <div className={`copy-toast${isToastVisible ? " show" : ""}`}>{toastMessage}</div>

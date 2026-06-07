@@ -16,12 +16,14 @@ export default function ContactSection({
   onChange,
   onCopyEmail,
   onSubmit,
+  isSubmitting,
 }: {
   contactForm: ContactFormState;
   errors: ContactFormErrors;
   onChange: ContactInputChangeHandler;
   onCopyEmail: () => void;
   onSubmit: ContactSubmitHandler;
+  isSubmitting: boolean;
 }) {
   return (
     <section className="contact-section" id="contact">
@@ -145,14 +147,17 @@ export default function ContactSection({
                   placeholder="Write your message here..."
                   value={contactForm.message}
                   onChange={onChange}
+                  disabled={isSubmitting}
                 />
               </FormField>
+              
+              <input type="text" name="_honey" style={{ display: "none" }} tabIndex={-1} autoComplete="off" />
             </div>
 
             <div className="contact-form-actions">
               <p className="form-note">I usually respond within 24–48 hours.</p>
-              <button className="btn btn-primary send-btn" type="submit">
-                <span>Send Message</span>
+              <button className="btn btn-primary send-btn" type="submit" disabled={isSubmitting}>
+                <span>{isSubmitting ? "Sending..." : "Send Message"}</span>
                 <SendIcon />
               </button>
             </div>
